@@ -35,7 +35,7 @@ tab1, tab2 = st.tabs(["SCV Graph Analysis", "Monitored Customers"])
 with tab1:
     # If you had a function to display the Pyvis graph, it would go here
     # For now, we'll display the placeholder image
-    placeholder_image = 'https://www.google.co.uk/url?sa=i&url=https%3A%2F%2Ftowardsdatascience.com%2Fpyvis-visualize-interactive-network-graphs-in-python-77e059791f01&psig=AOvVaw28kq_2S5OsxOwQz_2e1hWl&ust=1700299684297000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLCroofcyoIDFQAAAAAdAAAAABAE'  # Update with the path to your image
+    placeholder_image = 'https://www.google.co.uk/url?sa=i&url=https%3A%2F%2Fpyvis.readthedocs.io%2F&psig=AOvVaw1sRq14uzzRae5C_hXvqnIf&ust=1700299822702000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODDn8ncyoIDFQAAAAAdAAAAABAJ'  # Update with the path to your image
     st.image(placeholder_image, caption='Network Graph Placeholder')
 
 # Tab for Monitored Customers - This section would contain additional information
