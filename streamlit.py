@@ -50,5 +50,16 @@ tab1, tab2 = st.tabs(["SCV Graph Analysis", "Monitored Customers"])
 
 # Tab for the SCV Graph Analysis - Place the placeholder image here
 with tab1:
-    # If you had a function to display the Pyvis graph, it would go here
-   
+    placeholder_image_url = 'https://pyvis.readthedocs.io/en/latest/_images/net.png'  # Use the actual placeholder image URL
+    st.image(placeholder_image_url, caption='Network Graph Placeholder')
+
+# Tab for Monitored Customers - This section would contain additional information
+# or controls pertaining to monitored customers as per your application requirements
+with tab2:
+    st.write("Details for Monitored Customers")
+
+# Legend - You can create a static legend or dynamically update it based on the graph
+st.sidebar.header('Legend')
+st.sidebar.markdown('🔵 - Stores')
+st.sidebar.markdown('🟢 - Observation Traits')
+st.sidebar.markdown('🟠 - BF Member')
