@@ -12,11 +12,11 @@ def create_network_graph():
     return net
 
 # Layout for the title and the image
-col1, col2 = st.columns([3, 1])
+col1, col2 = st.columns([0.8, 0.2], gap="small")  # Adjust the ratio as needed for alignment
 with col1:
-    st.title('Single Customer View')
+    st.title('Single Customer View', anchor='start')  # Anchor text to the start of the column
 with col2:
-    st.image('https://upload.wikimedia.org/wikipedia/commons/0/01/New-betfred-logo.png')
+    st.image('https://upload.wikimedia.org/wikipedia/commons/0/01/New-betfred-logo.png', width=120)  # Adjust width as needed
 
 # Sidebar for filters
 with st.sidebar:
