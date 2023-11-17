@@ -12,7 +12,7 @@ def create_network_graph():
     return net
 
 # Layout for the title and the image
-col1, col2 = st.columns([1.5, 1], gap="small")  # Adjust the ratio as needed for alignment
+col1, col2 = st.columns([0.7, 0.2], gap="small")  # Adjust the ratio as needed for alignment
 with col1:
     st.title('Single Customer View', anchor='start')  # Anchor text to the start of the column
 with col2:
