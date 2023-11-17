@@ -18,19 +18,6 @@ with col1:
 with col2:
     st.image('https://i.imgur.com/1Dysbqm.png', width=180)  # Adjust width as needed
 
-blue_hex_code = '#00488f'
-
-# Apply custom styles with st.markdown and raw HTML/CSS
-st.markdown(f"""
-    <style>
-        /* This styles the sidebar background */
-        .stsidebar {{
-            background-color: {blue_hex_code};
-        }}
-        /* Additional customizations can be added here */
-    </style>
-""", unsafe_allow_html=True)
-
 # Sidebar for filters
 with st.sidebar:
     st.header('Filters')
