@@ -24,11 +24,7 @@ blue_hex_code = '#00488f'
 st.markdown(f"""
     <style>
         /* This styles the sidebar background */
-        .stSidebar {{
-            background-color: {blue_hex_code};
-        }}
-        /* This styles the main background */
-        .stApp {{
+        .stsidebar {{
             background-color: {blue_hex_code};
         }}
         /* Additional customizations can be added here */
