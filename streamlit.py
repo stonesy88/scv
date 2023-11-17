@@ -1,6 +1,7 @@
 import streamlit as st
 from pyvis.network import Network
-from streamlit_pyvis import st_pyvis
+import pandas as pd
+import networkx as nx
 
 # Define the Pyvis network graph
 def create_network_graph():
