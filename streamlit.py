@@ -19,6 +19,24 @@ with col2:
     st.image('https://i.imgur.com/1Dysbqm.png', width=180)  # Adjust width as needed
 
 # Sidebar for filters
+
+blue_hex_code = '#00488f'
+
+# Apply custom styles with st.markdown and raw HTML/CSS
+st.markdown(f"""
+    <style>
+        /* This styles the sidebar background */
+        .stSidebar {{
+            background-color: {blue_hex_code};
+        }}
+        /* This styles the main background */
+        body {{
+            background-color: {blue_hex_code};
+        }}
+        /* Additional customizations can be added here */
+    </style>
+""", unsafe_allow_html=True)
+
 with st.sidebar:
     st.header('Filters')
     # Create filter options as per the mockup
