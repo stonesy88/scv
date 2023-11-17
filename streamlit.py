@@ -16,7 +16,7 @@ col1, col2 = st.columns([1.5, 1], gap="small")  # Adjust the ratio as needed for
 with col1:
     st.title('Single Customer View', anchor='start')  # Anchor text to the start of the column
 with col2:
-    st.image('https://upload.wikimedia.org/wikipedia/commons/0/01/New-betfred-logo.png', width=120)  # Adjust width as needed
+    st.image('https://upload.wikimedia.org/wikipedia/commons/0/01/New-betfred-logo.png', width=180)  # Adjust width as needed
 
 # Sidebar for filters
 with st.sidebar:
