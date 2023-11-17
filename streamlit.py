@@ -34,9 +34,13 @@ tab1, tab2 = st.tabs(["SCV Graph Analysis", "Monitored Customers"])
 
 # Tab for the SCV Graph Analysis
 with tab1:
-    net = create_network_graph()
-    # Assuming st_pyvis is a function from a Streamlit component for Pyvis
-    st_pyvis(net)
+    def create_network_graph():
+    net = Network(height="600px", width="100%", bgcolor="#222222", font_color="white")
+    # Add nodes and edges according to the UI mockup
+    # net.add_node(...)
+    # net.add_edge(...)
+    # Configure the nodes' colors and edges as per the mockup
+    return net
 
 # Tab for Monitored Customers - This section would contain additional information
 # or controls pertaining to monitored customers as per your application requirements
