@@ -6,10 +6,9 @@ import networkx as nx
 # Define the Pyvis network graph
 def create_network_graph():
     net = Network(height="600px", width="100%", bgcolor="#222222", font_color="white")
-    # Add nodes and edges according to the UI mockup
+    # This is where you'd add nodes and edges for your actual Pyvis graph
     # net.add_node(...)
     # net.add_edge(...)
-    # Configure the nodes' colors and edges as per the mockup
     return net
 
 # Layout for the title and the image
@@ -32,11 +31,12 @@ with st.sidebar:
 # Create tabs for different views
 tab1, tab2 = st.tabs(["SCV Graph Analysis", "Monitored Customers"])
 
-# Tab for the SCV Graph Analysis
+# Tab for the SCV Graph Analysis - Place the placeholder image here
 with tab1:
-    net = create_network_graph()
-    # Assuming st_pyvis is a function from a Streamlit component for Pyvis
-    # st_pyvis(net) # Uncomment this line once you have the st_pyvis function defined.
+    # If you had a function to display the Pyvis graph, it would go here
+    # For now, we'll display the placeholder image
+    placeholder_image = 'https://www.google.co.uk/url?sa=i&url=https%3A%2F%2Ftowardsdatascience.com%2Fpyvis-visualize-interactive-network-graphs-in-python-77e059791f01&psig=AOvVaw28kq_2S5OsxOwQz_2e1hWl&ust=1700299684297000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLCroofcyoIDFQAAAAAdAAAAABAE'  # Update with the path to your image
+    st.image(placeholder_image, caption='Network Graph Placeholder')
 
 # Tab for Monitored Customers - This section would contain additional information
 # or controls pertaining to monitored customers as per your application requirements
