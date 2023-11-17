@@ -26,7 +26,7 @@ blue_hex_code = '#00488f'
 st.markdown(f"""
     <style>
         /* This styles the sidebar background */
-        .stSidebar {{
+        .sidebar {{
             background-color: {blue_hex_code};
         }}
         /* This styles the main background */
