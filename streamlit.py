@@ -12,8 +12,12 @@ def create_network_graph():
     # Configure the nodes' colors and edges as per the mockup
     return net
 
-# Initialize the Streamlit app with a title
-st.title('Single Customer View')
+# Layout for the title and the image
+col1, col2 = st.columns([3, 1])
+with col1:
+    st.title('Single Customer View')
+with col2:
+    st.image('https://upload.wikimedia.org/wikipedia/commons/0/01/New-betfred-logo.png')
 
 # Sidebar for filters
 with st.sidebar:
@@ -31,6 +35,7 @@ tab1, tab2 = st.tabs(["SCV Graph Analysis", "Monitored Customers"])
 # Tab for the SCV Graph Analysis
 with tab1:
     net = create_network_graph()
+    # Assuming st_pyvis is a function from a Streamlit component for Pyvis
     st_pyvis(net)
 
 # Tab for Monitored Customers - This section would contain additional information
